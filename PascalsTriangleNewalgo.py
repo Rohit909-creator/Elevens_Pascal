@@ -6,6 +6,7 @@ def elevens_pascal(n:int):
     for _ in range(1,n):
         
         out = carry_consolidator(out)
+        print(f"Number: {out}")
         
     print(out)
 
@@ -29,20 +30,22 @@ def carry_consolidator(digits:list):
             # print(f"Digit:{digits[i]} Digit:{shifted_digits[i]} Result: {result} Carry:{carry} Remainder:{remainder}")
             # print(f"Before: {pascal_form}")
             # pascal_form[n-i-1] = remainder
-            pascal_form = pascal_form+[remainder]
+            # pascal_form = pascal_form+[remainder]
             # print(f"After pascal_form[n-i-1]: {pascal_form}")
-            pascal_form = pascal_form+[carry]
+            # pascal_form = pascal_form+[carry]
+            
+            pascal_form = pascal_form +[carry*10+remainder]
             # print(f"After pascal_form[n-i-2]: {pascal_form}")
         else:
             pascal_form = pascal_form+[result]
             
-    # print(f"Digits: {digits}")
-    # print(f"ShiftedDigits: {shifted_digits}")
+    print(f"Digits: {digits}")
+    print(f"ShiftedDigits: {shifted_digits}")
     # print(f'Pascal form: {pascal_form}')
     
     # print(f"{digits}")
     # print(f"{shifted_digits}")
-    print(f'{pascal_form[::-1]}')
+    # print(f'{pascal_form[::-1]}')
     return pascal_form[::-1]
 if __name__ == "__main__":
     
