@@ -39,8 +39,8 @@ def carry_consolidator(digits:list):
         else:
             pascal_form = pascal_form+[result]
             
-    print(f"Digits: {digits}")
-    print(f"ShiftedDigits: {shifted_digits}")
+    # print(f"Digits: {digits}")
+    # print(f"ShiftedDigits: {shifted_digits}")
     # print(f'Pascal form: {pascal_form}')
     
     # print(f"{digits}")
@@ -54,6 +54,6 @@ if __name__ == "__main__":
     # carry_consolidator(digits=[1,6,15,20,15,6,1])
     # carry_consolidator(digits=[1])
     
-    print(elevens_pascal(8))
+    print(elevens_pascal(15))
     
     
