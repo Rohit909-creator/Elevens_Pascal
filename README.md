@@ -1,8 +1,9 @@
-# Elevens_Pascal
-A creative way to make pascals triangle using 11
+# Elevens_Pascal Experiment
 
-Chatgpt, Gemini, DeepSeek, Qwen3 coder kept on thinking to solve this problem but they couldn't.
+This is an experiment to create Pascal's Triangle using a new algorithm based on the number 11. This is used to test reasoning llms and their ability to solve mathematical problems creatively.
 
-Claude solved it in 2 minutes.
+- Chatgpt, Gemini, Qwen3 kept on thinking to solve this problem but they couldn't.
 
-I created the theory and I made it into working code in about 30-45 minutes.
+- Claude solved it in 2s, And Deep Seek Solved it in 1mins approx.
+
+- I created the theory, action plan on paper and I made it into working code in about 30-45 minutes.
